@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+
+    android:descendantFocusability="beforeDescendants"
+    android:paddingLeft="5dp"
+    android:layout_marginBottom="5dp"
+    android:paddingRight="5dp">
+
+    <LinearLayout
+        android:id="@+id/layout_quotation"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/card_background_selector"
+        android:descendantFocusability="afterDescendants"
+        android:orientation="vertical">
+
+
+        <LinearLayout
+            android:id="@+id/contactLinView"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight=".6"
+            android:background="#556199"
+            android:orientation="vertical"
+            android:padding="2dp"
+            android:weightSum="1.5">
+
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight=".5"
+                android:orientation="horizontal"
+                android:weightSum="3">
+
+
+                <TextView
+                    android:id="@+id/brandName"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1.2"
+                    android:background="@android:color/transparent"
+                    android:paddingLeft="5dp"
+                    android:textColor="#31B946"
+                    android:textSize="16sp"
+                    android:gravity="center|left"
+                    android:textStyle="bold" />
+                <TextView
+                    android:id="@+id/accessoryName"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1.2"
+                    android:background="@android:color/transparent"
+                    android:paddingLeft="5dp"
+                    android:textColor="#31B946"
+                    android:textSize="16sp"
+                    android:textStyle="bold" />
+                <TextView
+                    android:id="@+id/accessoryQty"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight=".3"
+                    android:background="@android:color/transparent"
+                    android:paddingLeft="5dp"
+                    android:textColor="#31B946"
+                    android:textSize="16sp"
+                    android:textStyle="bold" />
+                <ImageView
+                    android:id="@+id/editAccessory"
+                    android:layout_width="0dp"
+                    android:layout_height="30dp"
+                    android:layout_weight=".3"
+                    android:src="@drawable/ic_mode_edit_black_24dp"/>
+
+            </LinearLayout>
+
+
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+</FrameLayout>
+
+
+

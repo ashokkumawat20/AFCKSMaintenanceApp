@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg_color">
+
+
+    <LinearLayout
+        android:id="@+id/orderedMenu1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:id="@+id/relativeLayout1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_margin="@dimen/title_font"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:background="@drawable/dailog_backgrnd">
+
+            <LinearLayout
+                android:id="@+id/headername"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight=".5"
+                android:orientation="horizontal"
+                android:weightSum="3">
+
+
+                <TextView
+                    android:id="@+id/brandName"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1.2"
+                    android:background="@android:color/transparent"
+                    android:paddingLeft="12dp"
+                    android:textColor="#FFFFFF"
+                    android:textSize="16sp"
+                    android:text="Brand"
+                    android:layout_gravity="center"
+                    android:gravity="center|left"
+                    android:textStyle="bold" />
+                <TextView
+                    android:id="@+id/accessoryName"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@android:color/transparent"
+                    android:paddingLeft="7dp"
+                    android:text="Name"
+                    android:layout_gravity="center"
+                    android:textColor="#FFFFFF"
+                    android:textSize="16sp"
+                    android:textStyle="bold" />
+                <TextView
+                    android:id="@+id/accessoryQty"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight=".5"
+                    android:background="@android:color/transparent"
+                    android:paddingLeft="10dp"
+                    android:textColor="#FFFFFF"
+                    android:textSize="16sp"
+                    android:text="Qty."
+                    android:layout_gravity="center"
+                    android:textStyle="bold" />
+                <ImageView
+                    android:id="@+id/editAccessory"
+                    android:layout_width="0dp"
+                    android:layout_height="30dp"
+                    android:layout_weight=".3"
+                    />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/headername"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <android.support.v7.widget.RecyclerView
+                    android:id="@+id/feesdetailsList"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp"
+                    android:clipToPadding="false"
+                    android:paddingTop="8dp"
+
+                    />
+
+            </LinearLayout>
+
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+</RelativeLayout>

@@ -1,0 +1,179 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg_color"
+    >
+
+    <ScrollView
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        >
+        <LinearLayout
+            android:id="@+id/orderedMenu1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="vertical">
+            <RelativeLayout
+                android:id="@+id/relativeLayout1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:layout_marginRight="20dp"
+                android:layout_marginLeft="20dp"
+                android:background="@drawable/dailog_backgrnd"
+                android:layout_margin="@dimen/title_font" >
+
+                <LinearLayout
+                    android:id="@+id/title"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:gravity="center_vertical"
+                    android:orientation="vertical"
+                    >
+
+                    <TextView
+                        android:id="@+id/titleTxt"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Transfer!!"
+                        android:layout_marginLeft="20dp"
+                        android:gravity="center_vertical"
+                        android:textColor="#ffffff"
+                        android:textSize="18sp"
+                        android:textStyle="bold"
+                        />
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:background="#ffffff"
+                        android:layout_marginTop="8dp"
+                        />
+                </LinearLayout>
+                <ScrollView
+                    android:id="@+id/regScroll"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/title"
+                    >
+                    <LinearLayout
+                        android:id="@+id/orderedMenu"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:orientation="vertical">
+
+                        <Spinner
+                            android:id="@+id/displayLocationName"
+                            android:layout_width="match_parent"
+                            android:layout_height="40dp"
+                            android:popupBackground="@color/white"
+                            android:spinnerMode="dropdown"
+                            android:layout_marginLeft="15dp"
+                            android:layout_marginRight="15dp"
+                            android:layout_marginBottom="2dp"
+                            android:layout_marginTop= "5dp"
+                            android:background="@android:drawable/editbox_background_normal"
+                            android:textColor="@android:color/black" />
+                        <Spinner
+                            android:id="@+id/displayStatusName"
+                            android:layout_width="match_parent"
+                            android:layout_marginLeft="15dp"
+                            android:layout_marginRight="15dp"
+                            android:layout_marginBottom="2dp"
+                            android:layout_marginTop= "5dp"
+                            android:layout_height="40dp"
+                            android:popupBackground="@color/white"
+                            android:spinnerMode="dropdown"
+                            android:background="@android:drawable/editbox_background_normal"
+                            android:textColor="@android:color/black" />
+                        <EditText
+                            android:id="@+id/quntityEdtTxt"
+                            android:layout_width="match_parent"
+                            android:layout_height="40dp"
+                            android:hint = "* Enter Quantity"
+                            android:paddingLeft = "6dp"
+                            android:textColor="@color/textcolor"
+                            android:singleLine="true"
+                            android:inputType="number"
+                            android:textColorHint="@color/color_faintgray"
+                            android:background="#E0DADA"
+                            android:drawablePadding="5dp"
+                            android:layout_marginLeft="15dp"
+                            android:layout_marginRight="15dp"
+                            android:layout_marginBottom="2dp"
+                            android:layout_marginTop= "5dp"/>
+
+                        <Spinner
+                            android:id="@+id/spnrType"
+                            android:layout_width="match_parent"
+                            android:layout_height="40dp"
+                            android:padding="5dp"
+                            android:layout_marginLeft="15dp"
+                            android:layout_marginRight="15dp"
+                            android:layout_marginBottom="2dp"
+                            android:layout_marginTop= "10dp"
+                            android:spinnerMode="dialog"
+                            android:textColor="#2f4f4f"
+                            android:textSize="14sp"
+                            android:background="@android:drawable/editbox_background_normal"
+                            />
+
+                        <EditText
+                            android:id="@+id/descEdtTxt"
+                            android:layout_width="match_parent"
+                            android:layout_height="40dp"
+                            android:hint = "Enter Description"
+                            android:textColor="@color/textcolor"
+                            android:paddingLeft = "6dp"
+                            android:singleLine="true"
+                            android:textColorHint="@color/color_faintgray"
+                            android:inputType="textCapSentences"
+                            android:background="#E0DADA"
+                            android:drawablePadding="5dp"
+                            android:layout_marginLeft="15dp"
+                            android:layout_marginRight="15dp"
+                            android:layout_marginBottom="2dp"
+                            android:layout_marginTop= "10dp"/>
+
+
+
+
+
+
+                    </LinearLayout>
+                </ScrollView>
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/regScroll"
+                    android:textColor="@color/titlemenu"
+                    android:paddingBottom="5dp"
+                    >
+
+
+                    <Button
+                        android:id="@+id/placeBtn"
+                        android:layout_width="120dp"
+                        android:layout_height="50dp"
+                        android:layout_gravity="center"
+                        android:layout_marginBottom="10dp"
+                        android:layout_centerHorizontal="true"
+                        android:background="#556199"
+                        android:padding="10dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginRight="20dp"
+                        android:layout_marginLeft="20dp"
+                        android:text="Submit"
+                        android:textAllCaps="false"
+                        android:textColor="@color/back_c"
+                        android:textSize="18sp"
+                        android:textStyle="bold" />
+                </RelativeLayout>
+            </RelativeLayout>
+
+        </LinearLayout>
+    </ScrollView>
+</RelativeLayout>
